@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: min-content;
+    width: 100%;
+    background-color: #E0E3E7;
+    font-family: 'Inter', sans-serif;
+}
+
+header#title {
+    height: 2cm;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+header#title h1 {
+    font-size: 1.5rem;
+    padding: 0.5cm;
+}
+
+img.lasagna-image {
+    margin-top: 2.5cm;
+    height: auto;
+    width: 95%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+div.ingredients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 5cm;
+    margin-bottom: 3cm;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+div.vegetables,
+div.masalas,
+div.spices {
+    height: auto;
+    width: 100%;
+    max-width: 7cm;
+    border: solid black 0px;
+    padding: 0.5cm;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+div.vegetables p,
+div.masalas p,
+div.spices p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+div.recepie {
+    height: auto;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto 5cm auto;
+    border: solid black 0px;
+    padding: 1cm;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 15px;
+}
+
+p#recepietxt {
+    max-width: 650px;
+    font-size: 17px;
+    line-height: 1.65;
+    color: blue;
+}
+
+@media (max-width: 768px) {
+    header#title h1 {
+        font-size: 1.2rem;
+    }
+
+    div.ingredients {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3cm;
+    }
+
+    div.vegetables,
+    div.masalas,
+    div.spices {
+        width: 90%;
+        max-width: none;
+    }
+
+    div.recepie {
+        width: 95%;
+        padding: 0.8cm;
+    }
+
+    p#recepietxt {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header#title {
+        height: auto;
+        padding: 0.5rem;
+    }
+
+    header#title h1 {
+        font-size: 1rem;
+    }
+
+    img.lasagna-image {
+        width: 95%;
+        margin-top: 1.5cm;
+    }
+
+    div.ingredients {
+        margin-top: 2cm;
+        margin-bottom: 1.5cm;
+        padding: 0 0.5rem;
+    }
+
+    div.vegetables,
+    div.masalas,
+    div.spices {
+        width: 100%;
+        padding: 0.4cm;
+    }
+
+    div.recepie {
+        width: 95%;
+        margin: 0 auto 3cm auto;
+        padding: 0.6cm;
+    }
+
+    p#recepietxt {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    div.vegetables p,
+    div.masalas p,
+    div.spices p {
+        font-size: 0.85rem;
+    }
+
+    .site-footer {
+        background-color: #535457;
+        color: white;
+        padding: 30px 0;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .footer-container {
+        width: 85%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-links a {
+        color: #38bdf8;
+        margin: 0 10px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .footer-links a:hover {
+        text-decoration: underline;
+    }
+
+    .footer-info h3 {
+        margin: 0;
+    }
+
+    .footer-copy {
+        font-size: 14px;
+        opacity: 0.8;
+    }
+
+
+    @media (max-width: 768px) {
+        .site-footer {
+            padding: 20px 0;
+        }
+
+        .footer-container {
+            width: 90%;
+        }
+
+        .footer-links a {
+            margin: 0 8px;
+            font-size: 0.9rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .site-footer {
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+
+        .footer-container {
+            width: 95%;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            display: block;
+            margin: 5px 0;
+            font-size: 0.85rem;
+        }
+
+        .footer-copy {
+            font-size: 12px;
+        }
+    }
+
+    h1{
+        text-align: center;
+    }
+
+}
