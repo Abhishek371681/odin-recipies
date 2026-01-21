@@ -1,2 +1,4 @@
 ## 21st Jan 2026
 -- Learned about Flexbox Properties, Even with more detailes, learned the CSS properties such as Align-items, Justify-content.
+justify-content -- aligns the items at the center of the page, or at the axis.
+align-items -- aligns the items to the center according to the axis of the page
